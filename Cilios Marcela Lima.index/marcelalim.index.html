@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agendamento de Manutenção de Cílios - Dr. Marcela Lima</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background: #8e44ad;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+            padding: 20px;
+            background: #fff;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+        input, select, button {
+            margin: 10px 0;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        button {
+            background: #8e44ad;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+        }
+        button:hover {
+            background: #732d91;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Agendamento de Manutenção de Cílios</h1>
+    <h2> Dr. Marcela Lima</h2>
+</header>
+
+<<div class="container">
+    <img src="cilios.png" alt="Cílios Bonitos">
+    <img src="dr_marcela.png" alt="Dr. Marcela Lima" class="img-marcela" style="width: 80%; max-width: 300px;">
+    <p>Agende sua manutenção de cílios de forma fácil e rápida! Preencha o formulário abaixo:</p>
+    ...
+</div>
+
+    <p>Agende sua manutenção de cílios de forma fácil e rápida! Preencha o formulário abaixo:</p>
+    
+    <form action="agendar.php" method="POST">
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome" required>
+
+        <label for="email">E-mail:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="data">Data do Agendamento:</label>
+        <input type="date" id="data" name="data" required>
+
+        <label for="hora">Hora:</label>
+        <select id="hora" name="hora" required>
+            <option value="10:00">10:00</option>
+            <option value="11:00">11:00</option>
+            <option value="14:00">14:00</option>
+            <option value="15:00">15:00</option>
+        </select>
+
+        <button type="submit">Agendar</button>
+    </form>
+</div>
+
+</body>
+</html>
